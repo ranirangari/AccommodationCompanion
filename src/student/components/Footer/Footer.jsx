@@ -108,10 +108,8 @@ const Footer = () => {
         </Grid>
         <Grid></Grid>
 
-        <Grid className="pt-20" item xs={12}>
-          <Typography variant="body2" component="p" align="center">
-            &copy; 2023 Accommodation Companion - Rani Rangari.
-          </Typography>
+        <Grid className="pt-18" item xs={12}>
+         
 
           <div className="flex p-2 justify-center px-2 space-x-2 rounded-xl">
             <SocialIcon url="https://github.com/ranirangari" />
@@ -120,6 +118,9 @@ const Footer = () => {
             <SocialIcon url="https://www.hackerrank.com/ranirangari" />
             <SocialIcon url="https://auth.geeksforgeeks.org/user/ranirangari10/" />
           </div>
+          <Typography variant="body2" component="p" align="center">
+            &copy; 2023 Accommodation Companion - Rani Rangari.
+          </Typography>
           <Typography variant="body2" component="p" align="center">
             All rights reserved.
           </Typography>
