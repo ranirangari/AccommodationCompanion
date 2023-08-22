@@ -1,25 +1,22 @@
-import "./App.css";
-import { Routes,Route } from 'react-router-dom'
-import CustomerRouters from "./Routers/CustomerRouters";
-import Cart from "./student/components/Cart/Cart";
-import Checkout from "./student/components/Checkout/Checkout";
-import Footer from "./student/components/Footer/Footer";
-import Navigation from "./student/components/Navigation/Navigation";
-import Order from "./student/components/Order/Order";
-import OrderDetails from "./student/components/Order/OrderDetails";
-import Product from "./student/components/Product/Product";
-import ProductDetails from "./student/components/ProductDetails/ProductDetails";
-import HomePage from "./student/pages/HomePage/HomePage";
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navigation from './customer/Components/Navbar/Navigation';
+import CustomerRoutes from './Routers/CustomerRoutes';
+import AdminRoutes from './Routers/AdminRoutes';
+import NotFound from './Pages/Notfound';
+import AdminPannel from './Admin/AdminPannel';
+// import Routers from './Routers/Routers';
 
 function App() {
+  const isAdmin=true;
   return (
-    <div className="App">
+    <div className="">
+      
       <Routes>
-        <Route path='/*' element={<CustomerRouters/>}></Route>
+        <Route path="/*" element={<CustomerRoutes />} />
+        <Route path="/admin/*" element={<AdminPannel />} />
+        
       </Routes>
-    
-     
-     
     </div>
   );
 }
